@@ -40,8 +40,8 @@
   <li><strong>MA (Moving Average)</strong></li>
   <li><strong>ARMA (AutoRegressive Moving Average)</strong></li>
   <li><strong>ARIMA (AutoRegressive Integrated Moving Average)</strong></li>
-  <li><strong>ARIMAX (ARIMA with Exogenous Variables)</strong></li>
   <li><strong>SARIMA (Seasonal ARIMA)</strong></li>
+    <li><strong>ARIMAX (ARIMA with Exogenous Variables)</strong></li>
   <li><strong>SARIMAX (SARIMA with Exogenous Variables)</strong></li>
 </ul>
 
@@ -66,13 +66,13 @@ venv\Scripts\activate</code></pre>
 
 <ol>
   <li><strong>Data Preprocessing:</strong><br>Run the data preprocessing script to clean and prepare the data.
-    <pre><code>data_preprocessing.ipynb</code></pre>
+    <pre><code>notebooks/data_preprocessing.ipynb</code></pre>
   </li>
   <li><strong>EDA.ipynb:</strong><br>Visulize the data to understand it and find trends.
-    <pre><code>EDA.ipynb</code></pre>
+    <pre><code>notebooks/EDA.ipynb</code></pre>
   </li>
   <li><strong>Model Training:</strong><br>Train the various time series models.
-    <pre><code>modelling.ipynb</code></pre>
+    <pre><code>notebooks/modelling.ipynb</code></pre>
   </li>
 </ol>
 
@@ -81,13 +81,12 @@ venv\Scripts\activate</code></pre>
 
 The performance of these models was evaluated using Mean Absolute Percentage Error (MAPE) and other error metrics on both validation and test datasets.
 
-<i><b>`The results indicated that the **SARIMAX model** achieved the best performance with the least MAPE score and the lowest error, followed by the **SARIMA model** and the **ARIMAX model**.`</i></b>
+<i><b>`The results indicated that the **SARIMAX model** achieved the best performance with the least MAPE score and the lowest error, followed by the **ARIMAX model** and the **SARIMA model**.`</i></b>
 
 Here's a summary of the results:
 
 - `SARIMAX`: Achieved the lowest MAPE and error rates on both validation and test datasets.
-- `SARIMA` : Performed well, but slightly less accurate than SARIMAX.
-- `ARIMAX` : Showed reasonable performance, leveraging exogenous variables for forecasting.
+- `ARIMAX` : Also Showed excellent performance, leveraging exogenous variables for forecasting.
 
 <i>This demonstrates the effectiveness of including seasonality and exogenous variables in improving the accuracy of demand forecasting in e-commerce.</i>
 
