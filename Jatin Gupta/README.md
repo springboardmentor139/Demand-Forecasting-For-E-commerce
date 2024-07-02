@@ -92,6 +92,6 @@ Here's a summary of the results:
 
 <h2 id="license">License</h2>
 
-<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+<p>This project is licensed under the MIT License - see the <a href="../LICENSE">LICENSE</a> file for details.</p>
 
 
