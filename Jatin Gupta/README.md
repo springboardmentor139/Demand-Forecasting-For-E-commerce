@@ -22,11 +22,8 @@
   - `ProductA.xlsx`: Original data file 1.
   - `ProductA_google_clicks.xlsx`: Original data file 2.
   - `ProductA_fb_impressions.xlsx`: Original data file 3.
-- **notebooks/**: Directory containing Jupyter notebooks for different stages of the project.
-  - `preprocessing.ipynb`: Notebook for data merging, preprocessing, and feature engineering.
-  - `EDA.ipynb`: Notebook for Exploratory Data Analysis (EDA) to visualize trends and hypotheses.
-  - `Modeling.ipynb`: Notebook for modeling and obtaining forecasting results.
-- `notebook.ipynb`: Combined notebook for the whole project.
+
+- `notebook.ipynb`: Notebook for the complete project.
 
 - `final_df.xlsx`: Merged and preprocessed data used for analysis and modelling.
 - `project.pdf`: PDF document summarizing the project including methodology and results.
@@ -43,6 +40,7 @@
   <li><strong>ARIMAX (ARIMA with Exogenous Variables)</strong></li>
   <li><strong>SARIMA (Seasonal ARIMA)</strong></li>
   <li><strong>SARIMAX (SARIMA with Exogenous Variables)</strong></li>
+  <li><strong>Multivariate Regression</strong></li>
 </ul>
 
 <h2 id="installation">Installation</h2>
@@ -60,34 +58,21 @@ venv\Scripts\activate</code></pre>
   <li>Install the required packages:
     <pre><code>pip install -r requirements.txt</code></pre>
   </li>
+  <li> Open and run the notebook interactively:
+  <pre><code>jupyter notebook notebook.ipynb
+</code></pre>
+  </li>
+  
 </ol>
 
-<h2 id="usage">Usage</h2>
 
-<ol>
-  <li><strong>Data Preprocessing:</strong><br>Run the data preprocessing script to clean and prepare the data.
-    <pre><code>data_preprocessing.ipynb</code></pre>
-  </li>
-  <li><strong>EDA.ipynb:</strong><br>Visulize the data to understand it and find trends.
-    <pre><code>EDA.ipynb</code></pre>
-  </li>
-  <li><strong>Model Training:</strong><br>Train the various time series models.
-    <pre><code>modelling.ipynb</code></pre>
-  </li>
-</ol>
 
 
 <h2 id="results">Results</h2>
-
+<p>
 The performance of these models was evaluated using Mean Absolute Percentage Error (MAPE) and other error metrics on both validation and test datasets.
 
-<i><b>`The results indicated that the **SARIMAX model** achieved the best performance with the least MAPE score and the lowest error, followed by the **SARIMA model** and the **ARIMAX model**.`</i></b>
-
-Here's a summary of the results:
-
-- `SARIMAX`: Achieved the lowest MAPE and error rates on both validation and test datasets.
-- `SARIMA` : Performed well, but slightly less accurate than SARIMAX.
-- `ARIMAX` : Showed reasonable performance, leveraging exogenous variables for forecasting.
+<i><b>The results indicated that the `SARIMAX model` achieved the best performance with the least MAPE score, followed by the `Multivariate Regression model` and the `ARIMAX model`.</i></b>
 
 <i>This demonstrates the effectiveness of including seasonality and exogenous variables in improving the accuracy of demand forecasting in e-commerce.</i>
 
