@@ -11,14 +11,13 @@
   <li><a href="#project-structure">Project Structure</a></li>
     <li><a href="#models-implemented">Models Implemented</a></li>
   <li><a href="#installation">Installation</a></li>
-  <li><a href="#usage">Usage</a></li>
   <li><a href="#results">Results</a></li>
   <li><a href="#license">License</a></li>
 </ul>
 
 <h2 id="project-structure">Project Structure</h2>
 
-- **dataset/**: Directory containing raw data files.
+- `dataset/`: Directory containing raw data files.
   - `ProductA.xlsx`: Original data file 1.
   - `ProductA_google_clicks.xlsx`: Original data file 2.
   - `ProductA_fb_impressions.xlsx`: Original data file 3.
@@ -66,36 +65,11 @@ venv\Scripts\activate</code></pre>
 </ol>
 
 
-<<<<<<< HEAD
-=======
-<ol>
-  <li><strong>Data Preprocessing:</strong><br>Run the data preprocessing script to clean and prepare the data.
-    <pre><code>notebooks/data_preprocessing.ipynb</code></pre>
-  </li>
-  <li><strong>EDA.ipynb:</strong><br>Visulize the data to understand it and find trends.
-    <pre><code>notebooks/EDA.ipynb</code></pre>
-  </li>
-  <li><strong>Model Training:</strong><br>Train the various time series models.
-    <pre><code>notebooks/modelling.ipynb</code></pre>
-  </li>
-</ol>
->>>>>>> 158568e530f6efdaad5b53f66324da79d0a47b86
-
-
 <h2 id="results">Results</h2>
 <p>
 The performance of these models was evaluated using Mean Absolute Percentage Error (MAPE) and other error metrics on both validation and test datasets.
 
-<<<<<<< HEAD
 <i><b>The results indicated that the `SARIMAX model` achieved the best performance with the least MAPE score, followed by the `Multivariate Regression model` and the `ARIMAX model`.</i></b>
-=======
-<i><b>`The results indicated that the **SARIMAX model** achieved the best performance with the least MAPE score and the lowest error, followed by the **ARIMAX model** and the **SARIMA model**.`</i></b>
-
-Here's a summary of the results:
-
-- `SARIMAX`: Achieved the lowest MAPE and error rates on both validation and test datasets.
-- `ARIMAX` : Also Showed excellent performance, leveraging exogenous variables for forecasting.
->>>>>>> 158568e530f6efdaad5b53f66324da79d0a47b86
 
 <i>This demonstrates the effectiveness of including seasonality and exogenous variables in improving the accuracy of demand forecasting in e-commerce.</i>
 
