@@ -37,8 +37,8 @@
   <li><strong>MA (Moving Average)</strong></li>
   <li><strong>ARMA (AutoRegressive Moving Average)</strong></li>
   <li><strong>ARIMA (AutoRegressive Integrated Moving Average)</strong></li>
-  <li><strong>ARIMAX (ARIMA with Exogenous Variables)</strong></li>
   <li><strong>SARIMA (Seasonal ARIMA)</strong></li>
+    <li><strong>ARIMAX (ARIMA with Exogenous Variables)</strong></li>
   <li><strong>SARIMAX (SARIMA with Exogenous Variables)</strong></li>
   <li><strong>Multivariate Regression</strong></li>
 </ul>
@@ -66,18 +66,41 @@ venv\Scripts\activate</code></pre>
 </ol>
 
 
+<<<<<<< HEAD
+=======
+<ol>
+  <li><strong>Data Preprocessing:</strong><br>Run the data preprocessing script to clean and prepare the data.
+    <pre><code>notebooks/data_preprocessing.ipynb</code></pre>
+  </li>
+  <li><strong>EDA.ipynb:</strong><br>Visulize the data to understand it and find trends.
+    <pre><code>notebooks/EDA.ipynb</code></pre>
+  </li>
+  <li><strong>Model Training:</strong><br>Train the various time series models.
+    <pre><code>notebooks/modelling.ipynb</code></pre>
+  </li>
+</ol>
+>>>>>>> 158568e530f6efdaad5b53f66324da79d0a47b86
 
 
 <h2 id="results">Results</h2>
 <p>
 The performance of these models was evaluated using Mean Absolute Percentage Error (MAPE) and other error metrics on both validation and test datasets.
 
+<<<<<<< HEAD
 <i><b>The results indicated that the `SARIMAX model` achieved the best performance with the least MAPE score, followed by the `Multivariate Regression model` and the `ARIMAX model`.</i></b>
+=======
+<i><b>`The results indicated that the **SARIMAX model** achieved the best performance with the least MAPE score and the lowest error, followed by the **ARIMAX model** and the **SARIMA model**.`</i></b>
+
+Here's a summary of the results:
+
+- `SARIMAX`: Achieved the lowest MAPE and error rates on both validation and test datasets.
+- `ARIMAX` : Also Showed excellent performance, leveraging exogenous variables for forecasting.
+>>>>>>> 158568e530f6efdaad5b53f66324da79d0a47b86
 
 <i>This demonstrates the effectiveness of including seasonality and exogenous variables in improving the accuracy of demand forecasting in e-commerce.</i>
 
 <h2 id="license">License</h2>
 
-<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+<p>This project is licensed under the MIT License - see the <a href="../LICENSE">LICENSE</a> file for details.</p>
 
 
