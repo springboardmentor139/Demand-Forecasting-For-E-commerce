@@ -18,12 +18,14 @@
 
 <h2 id="project-structure">Project Structure</h2>
 
-- **dataset/**: Directory containing raw data files.
+- `dataset/`: Directory containing raw data files.
   - `ProductA.xlsx`: Original data file 1.
   - `ProductA_google_clicks.xlsx`: Original data file 2.
   - `ProductA_fb_impressions.xlsx`: Original data file 3.
-
-- `notebook.ipynb`: Notebook for the complete project.
+- `notebooks/`: Directory containing Jupyter notebooks for different stages of the project.
+  - `preprocessing.ipynb`: Notebook for data merging, preprocessing, and feature engineering.
+  - `EDA.ipynb`: Notebook for Exploratory Data Analysis (EDA) to visualize trends and hypotheses.
+  - `modeling.ipynb`: Notebook for modeling and obtaining forecasting results.
 
 - `final_df.xlsx`: Merged and preprocessed data used for analysis and modelling.
 - `project.pdf`: PDF document summarizing the project including methodology and results.
@@ -65,9 +67,9 @@ venv\Scripts\activate</code></pre>
   
 </ol>
 
+<h2 id="usage">Usage</h2>
 
-<<<<<<< HEAD
-=======
+
 <ol>
   <li><strong>Data Preprocessing:</strong><br>Run the data preprocessing script to clean and prepare the data.
     <pre><code>notebooks/data_preprocessing.ipynb</code></pre>
@@ -79,28 +81,18 @@ venv\Scripts\activate</code></pre>
     <pre><code>notebooks/modelling.ipynb</code></pre>
   </li>
 </ol>
->>>>>>> 158568e530f6efdaad5b53f66324da79d0a47b86
 
 
 <h2 id="results">Results</h2>
 <p>
 The performance of these models was evaluated using Mean Absolute Percentage Error (MAPE) and other error metrics on both validation and test datasets.
 
-<<<<<<< HEAD
 <i><b>The results indicated that the `SARIMAX model` achieved the best performance with the least MAPE score, followed by the `Multivariate Regression model` and the `ARIMAX model`.</i></b>
-=======
-<i><b>`The results indicated that the **SARIMAX model** achieved the best performance with the least MAPE score and the lowest error, followed by the **ARIMAX model** and the **SARIMA model**.`</i></b>
-
-Here's a summary of the results:
-
-- `SARIMAX`: Achieved the lowest MAPE and error rates on both validation and test datasets.
-- `ARIMAX` : Also Showed excellent performance, leveraging exogenous variables for forecasting.
->>>>>>> 158568e530f6efdaad5b53f66324da79d0a47b86
 
 <i>This demonstrates the effectiveness of including seasonality and exogenous variables in improving the accuracy of demand forecasting in e-commerce.</i>
 
 <h2 id="license">License</h2>
 
-<p>This project is licensed under the MIT License - see the <a href="../LICENSE">LICENSE</a> file for details.</p>
+<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
 
 
