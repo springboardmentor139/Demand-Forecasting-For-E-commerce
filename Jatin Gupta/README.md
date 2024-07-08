@@ -11,6 +11,7 @@
   <li><a href="#project-structure">Project Structure</a></li>
     <li><a href="#models-implemented">Models Implemented</a></li>
   <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
   <li><a href="#results">Results</a></li>
   <li><a href="#license">License</a></li>
 </ul>
@@ -69,7 +70,6 @@ venv\Scripts\activate</code></pre>
 <h2 id="usage">Usage</h2>
 
 
-<<<<<<< HEAD
 <ol>
   <li><strong>Data Preprocessing:</strong><br>Run the data preprocessing script to clean and prepare the data.
     <pre><code>notebooks/data_preprocessing.ipynb</code></pre>
@@ -82,9 +82,6 @@ venv\Scripts\activate</code></pre>
   </li>
 </ol>
 
-
-=======
->>>>>>> ce61bc8184c59b7b4f54a657ce2ed0d06529fcfd
 <h2 id="results">Results</h2>
 <p>
 The performance of these models was evaluated using Mean Absolute Percentage Error (MAPE) and other error metrics on both validation and test datasets.
@@ -95,6 +92,6 @@ The performance of these models was evaluated using Mean Absolute Percentage Err
 
 <h2 id="license">License</h2>
 
-<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+<p>This project is licensed under the MIT License - see the <a href="../LICENSE">LICENSE</a> file for details.</p>
 
 
